@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Valhalla</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color:rgb(0, 0, 0);">
+
+
+
+        <h1>Welcome To Dungeon Of Pizza</h1>
+
+        <h2> Always Great, Never Greasy </h2>
+
+        <header>
+        <section id="banner">
+            <video src="v.mp4" muted autoplay loop>
+            </video>
+        </section>
+
+    </header>
+
+    <main>
+
+        <form action="pizza.php" method="POST">
+
+            <h2>Design your pizza</h2>
+
+            <fieldset>
+
+                <legend>Pizza Size and Shape</legend>
+
+                <label for="pizza_size">Pizza Size:</label>
+                <select id="pizza_size" name="pizza_size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="Behemoth">Behemoth</option>
+                </select>
+
+                <label>Pizza Shape:</label>
+                <input type="radio" id="pizza_shape_round" name="pizza_shape" value="round" required>
+                <label for="pizza_shape_round">Round</label>
+                <input type="radio" id="pizza_shape_square" name="pizza_shape" value="square">
+                <label for="pizza_shape_square">Square</label>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Toppings</legend>
+                <label>Toppings:</label>
+                <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+                <input type="checkbox" id="Beef" name="toppings[]" value="Beef">
+                <label for="Beef">Beef</label>
+                <input type="checkbox" id="Chicken" name="toppings[]" value="Chicken">
+                <label for="Chicken">Chicken</label>
+            </fieldset><br>
+
+
+            <fieldset>
+                <legend>Crust Type</legend>
+                <input type="radio" id="cheese_crust" name="crust" value="Cheese Crust Pizza" required>
+                <label for="cheese_crust">Cheese Crust Pizza</label>
+                <input type="radio" id="thin_crust" name="crust" value="thin crust">
+                <label for="thin_crust" Name>Thin Crust</label>
+                <input type="radio" id="stuffed_crust" name="crust" value="Stuffed Crust">
+                <label for="stuffed_crust">Stuffed Crust</label>
+                <input type="radio" id="cracker_crust" name="crust" value="Cracker Crust">
+                <label for="cracker_crust">Cracker Crust</label>
+
+            </fieldset><br>
+
+
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <label>Delivery Method:</label>
+                <input type="radio" id="takeout" name="delivery" value="takeout" required>
+                <label for="takeout">Take Out</label>
+                <input type="radio" id="delivery" name="delivery" value="delivery">
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="eat_in" name="delivery" value="eat in">
+                <label for="eat_in">Eat In</label>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name" value="" required>
+
+                <label for="phone">Phone</label>
+                <input type="number" id="phone" name="phone" value="" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" value="" required>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Number Of Pizzas</legend>
+                <input type="number" id="number" name="number" min="1" value="1" required>
+            </fieldset><br>
+
+            <button name="subject" type="submit">Place Order</button>
+            <button name="reset" type="reset">Reset</button>
+
+        </form>
+    </main>
+    <footer>
+        <p>Products with most buyers:</p>
+
+        <label for="pepperoni pizza">Pepperoni pizza:</label>
+        <meter id="pepperoni pizza" value="2" min="0" max="10">20</meter><br>
+
+        <label for="Chicken pizza">Chicken pizza:</label>
+        <meter id="Chicken pizza" value="0.6">60%</meter><br>
+
+        <label for="mushrooms pizza">Mushrooms pizza:</label>
+        <meter id="mushrooms pizza" value="0.6">30px</meter>
+
+        <p>&copy; 2023 Pizza Valhalla</p>
+
+    </footer>
+    
+</body>
+
+
+</html>
